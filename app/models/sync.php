@@ -2,10 +2,10 @@
 
 class Sync extends M_Model
 {
-	private $qq_appid = 100252736;
+	private $qq_appid = 0000;
 	private $qq_scope = 'get_user_info,add_t,add_topic';
 	private $qq_callback = 'http://isharp.me/admin/sync_callback';
-	private $qq_appkey = 'ed5c8fd4f05cfa247a65159286a4d890';
+	private $qq_appkey = '0000';
 
 	public function __construct()
 	{

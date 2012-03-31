@@ -5,7 +5,7 @@ class Admin extends M
 	public function __construct()
 	{
 		parent::__construct();
-		if(!DEBUG && ('59.108.77.208' != $_SERVER['REMOTE_ADDR'] || 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.1 Safari/536.5' !== get_var($_SERVER, 'HTTP_USER_AGENT', '')))
+		if(!DEBUG && ('0.0.0.0' != $_SERVER['REMOTE_ADDR'] || 'IE5' !== get_var($_SERVER, 'HTTP_USER_AGENT', '')))
 		{
 			header('WWW-Authenticate: Basic realm=""');
 			header('HTTP/1.0 401 Unauthorized');
