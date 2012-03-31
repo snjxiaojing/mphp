@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+body {
+	font:12px "Monaco";
+}
+
+/* menu */
+#menu {
+	background-color:#f0f0f0;
+	width:150px;
+	position:fixed;
+	bottom:-123px;
+	right:0;
+	border:3px #999 solid;
+	box-shadow:-5px -5px 30px #999;
+}
+
+#menu a {
+	display: block;
+	text-decoration:none;
+}
+
+#menu a:hover {
+	background-color:#ccc;
+}
+
+/* pager */
+.pg_c a , .pg_n a {
+	display: inline-block;
+	padding:5px 10px;
+	margin-right: 5px;
+	cursor:pointer;
+	border:1px solid #bbb;
+}
+
+.pg_n a:hover {
+	border-color:#000;
+}
+
+.pg_c a {
+	text-decoration:none;
+	cursor: default;
+}
+
+/* cmt */
+
+table {
+	width:100%;
+	/*border-collapse:collapse;*/
+}
+table th, table td {
+	border:1px solid #333;
+}
+
+/* post */
+td input[type='text'] {
+	width:300px;
+}
+
+input[type='button'] {
+	cursor: pointer;
+}
+
+td textarea {
+	width:100%;
+}
+
+/* pop_window */
+
+#cover {
+	position: fixed;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-color:#333;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=5);
+}
+
+#window {
+	position: fixed;
+	height:130px;
+	width:450px;
+	background-color:#fff;
+	left:50%;
+	top:50%;
+	margin-left:-225px;
+	margin-top:-65px;
+	padding:5px;
+	border:1px solid #fa4;
+	box-shadow:0 0 25px #fa4;
+}
+
+#window input[type='text'] {
+	width:150px;
+}
+
+#window input[type='button'] {
+	cursor: pointer;
+	background-color:#ccf;
+}
+
+#window_close {
+	float:right;
+	cursor: pointer;
+	padding:0 5px;
+	background-color: #FFFB99;
+}
